@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+}
+
+/* Create the grid */
+
+.grid {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  font-family: 'Oswalk', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+/* The grid boxes setup */
+
+.boxgeneral {
+  display: flex;
+  text-align: center;
+  color: black;
+  /* debug line below */
+  /* border: 2px red solid; */
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.box1 {
+  background-color: #466995;
+  /* text-transform: uppercase; */
+  font-size: 15px;
+}
+
+.box2 {
+  background-color: #DBE9EE;
+  font-size: 20px;
+
+}
+
+/* The button "click" */
+
+.button a{
+  cursor: pointer;
+  position: relative;
+  color: #FFF;
+}
+
+.button a:active {
+  top: 2px;
+  color: #DBE9EE;
+}
+
+/* The Header grid for the buttons */
+
+.headerrow {
+  grid-area: 1 / 1 / 2 / 7;
+  min-height: 75px;
+  min-width: 600px;
+}
+
+.b1 {
+  grid-area: 1 / 2 / 2 / 3;
+
+}
+
+.b2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.b3 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.b4 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+/* The footer area */
+
+.footerrow {
+  grid-area: 3 / 1 / 4 / 7;
+  min-height: 50px;
+}
+
+.footerbox {
+  grid-area: 3 / 3 / 4 / 5;
+}
+
+/* Setup the picture box */
+.picturebox {
+  grid-area: 2 / 1 / 3 / 4;
+  /* grid-area: 2 / 4 / 3 / 7; */
+}
+
+.photo {
+  object-fit: cover;
+  max-width: 75%;
+  max-height: 75%;
+  align-self: auto;
+  border-radius: 30px;
+  overflow-y: scroll;
+}
+
+/* Story area */
+
+.storybox {
+  /* grid-area: 2 / 1 / 3 / 4; */
+  grid-area: 2 / 4 / 3 / 7;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: justify;
+  overflow-y: scroll;
+}
