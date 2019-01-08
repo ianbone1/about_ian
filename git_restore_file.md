@@ -32,3 +32,19 @@ git log
 ```
 
 Sample output:
+
+```
+commit 8060a55295b84a567a0dc2ff45bc3711c42c42a0 (HEAD -> master, origin/master)
+Author: ianbone1 <ianbone1@googlemail.com>
+Date:   Tue Jan 8 14:31:45 2019 +0000
+
+    Deleted test file
+
+commit 18b3490ce3cc6379aa4049722969ad1ed412e2f8
+Author: ianbone1 <ianbone1@googlemail.com>
+Date:   Tue Jan 8 14:31:26 2019 +0000
+
+    Added test file to recover
+:
+:
+```
