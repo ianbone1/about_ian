@@ -1,4 +1,4 @@
-#Recover a file from git
+# Recover a file from git
 
 To restore a deleted file from your repo:
 
