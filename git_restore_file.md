@@ -1,4 +1,4 @@
-*Recover a file from git*
+#Recover a file from git
 
 To restore a deleted file from your repo:
 
@@ -47,4 +47,14 @@ Date:   Tue Jan 8 14:31:26 2019 +0000
     Added test file to recover
 :
 :
+```
+
+Need to restore back to the commit beginning 18b3490
+
+```
+git checkout 18b3490 -- delete.me.recover.me
+git add .
+gst
+git commit -m "Recovered the delete.me.recover.me file"
+git push
 ```
